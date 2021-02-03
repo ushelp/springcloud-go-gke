@@ -1,0 +1,93 @@
+.mycontainer {}
+
+.dropify-wrapper {
+    position: relative;
+    padding: 45px 15px 45px 15px;
+    margin: 15px 0;
+    background-color: #fafafa;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, .05);
+    border-color: #e5e5e5 #eee #eee;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.projectTitle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.queueList {
+    min-height: 300px;
+    padding: 20px;
+    border: 3px dashed #e6e6e6;
+}
+
+.queueList.filled {
+    padding: 27px;
+    margin: 0;
+    border: 3px dashed transparent;
+}
+
+.queueList.webuploader-dnd-over {
+    border: 3px dashed #999999;
+}
+
+.placeholder {
+    padding-top: 148px;
+    text-align: center;
+    color: #cccccc;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.remove-icon {
+    margin-right: 10px;
+}
+
+
+.runmsg {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.statusBar {
+    border-top: 1px solid #dadada;
+    vertical-align: middle;
+    display: none;
+}
+
+.statusBar .info {
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+}
+
+
+#clusterDiv {
+    display: none;
+}
+
+#autoScalingDiv {
+    display: none;
+}
+#regionDiv{
+    display: none;
+}
+
+
+#runlog{
+    max-height:200px;
+    overflow:auto;
+    line-height:25px;
+    font-size:13px;
+    min-height:30px;
+    max-width: 100%;
+}

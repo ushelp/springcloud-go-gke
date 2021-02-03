@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" /> -->
+
+        <title>Spring Cloud go GKE GUI</title>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap-4.5.2-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./js/lib/layer/theme/default/layer.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./css/spectre/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/spectre/spectre.css">
+        <link rel="stylesheet" type="text/css" href="./css/spectre/spectre-icons.css">
+         -->
+    </head>
+    <body>
+
+        <div class="jumbotron  jumbotron-fluid pt-4 pb-2 m-0">
+            <div class="container-fluid">
+
+                <h1 class="display-4">Spring Cloud go GKE GUI </h1>
+                <p class="lead">
+                    Easily convert your spring projects and migrate to GKE.</p>
+                <hr class="mt-4 mb-2">
+
+                <button class="btn btn-secondary " type="button" data-toggle="collapse" data-target="#collapsePrerequists"
+                    aria-expanded="false" aria-controls="collapsePrerequists">
+                    Prerequisite
+                </button>
+                <div class="collapse" id="collapsePrerequists">
+                    <div class="card-body py-1">
+                        <div>1. Install the <strong>Cloud SDK</strong></div>
+                        <div>2. Settings</div>
+                        <div class="ml-3">
+                            <code>gcloud components update</code><br />
+                            <code>gcloud auth login</code><br />
+                            <code>gcloud config set project <var>YOUR_PROJECT_ID</var></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-2 py-2 ">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <h5 class="card-header alert alert-success mb-0"><i class="fas fa-tasks mr-1"></i>Spring Cloud Projects Conversion</h5>
+
+                        <div class="card-body text-center bg-light pt-5">
+
+                            <p>
+                                <img src="./imgs/springcloud.png" height="115">
+                            </p>
+                            <p class="card-text">Convert Spring Cloud project to GKE project.</p>
+                            <a class="btn btn-success btn-block selCard" href="html/springcloud.html" role="button" data-container="springcloud">Convert</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <h5 class="card-header alert alert-primary  mb-0"><i class="fab fa-codepen mr-1"></i>GKE Projects
+                            Deployment</h5>
+                        <div class="card-body  text-center bg-light pt-5">
+
+                            <p>
+                                <img src="./imgs/gke.png">
+                            </p>
+                            <p class="card-text">Deploy GKE project to GKE</p>
+                            <a class="btn btn-primary btn-block selCard" href="html/gke.html" role="button" data-container="gke">Deploy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+       <script>
+           window.$=window.jQuery=require("./js/lib/jquery-3.5.1.min");
+       </script>
+       <!-- <script>
+            // 重命名 Electron 提供的 require 
+            window.nodeRequire = require;
+            delete window.require;
+            delete window.exports;
+            delete window.module;
+        </script>
+        <script src="./js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script> -->
+       <script src="./css/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+       <script src="./js/lib/layer/layer.js"></script>
+        <script src="./js/index.js"></script>
+
+    </body>
+</html>
