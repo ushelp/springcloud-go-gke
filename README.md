@@ -2,6 +2,9 @@
 
 Easily convert your spring projects and migrate to GKE.
 
+[Spring Cloud go GKE.pdf](./Spring-Cloud-go-GKE.pdf)
+
+
 ## Prerequisite
 1. Install the `Cloud SDK`
 2. Settings
